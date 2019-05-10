@@ -1,0 +1,11 @@
+p {
+    color:blue;
+    
+}
+div{
+    background-color: rgb(106, 153, 106);
+    border: 1px solid green;
+    text-align: center;
+  
+    margin: 40px;
+}

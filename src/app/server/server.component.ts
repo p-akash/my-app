@@ -12,8 +12,12 @@ export class ServerComponent implements OnInit{
     }, 5000);
   }
  serverId = 22;
+ serverCreationStates ="No server was created!"
  allowNewServer = true;
  serverStates = 'Online';
+ onCreateServer(){
+   this.serverCreationStates = "Server was crated!"
+ }
  getServerStates(){
    return this.serverStates;
  }

@@ -1,5 +1,6 @@
 <p>
   {{'Server'}} with serverID {{serverId}} is {{getServerStates()}}
 </p>
-<button class="bnt btn-primary" [disabled]="allowNewServer">Add Server</button>
+<button type="button" class="btn btn-primary" [disabled]="allowNewServer" (click)="onCreateServer()">Add Server</button>
 <p>{{allowNewServer}}</p>
+<p>{{ serverCreationStates }}</p>

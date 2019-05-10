@@ -1,3 +1,14 @@
+
+<label>Server Name</label>
+<input 
+type="text"
+class="form-contral"
+(input) ="onUpdateServerName($event)">
+<input 
+type="text"
+class="form-contral"
+[(ngModel)]="serverName">
+<p>{{ serverName}}</p>
 <p>
   {{'Server'}} with serverID {{serverId}} is {{getServerStates()}}
 </p>

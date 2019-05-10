@@ -15,11 +15,15 @@ export class ServerComponent implements OnInit{
  serverCreationStates ="No server was created!"
  allowNewServer = true;
  serverStates = 'Online';
+ serverName = ''
  onCreateServer(){
    this.serverCreationStates = "Server was crated!"
  }
  getServerStates(){
    return this.serverStates;
+ }
+ onUpdateServerName(event:Event){
+   this.serverName = (<HTMLInputElement>event.target).value;
  }
 ngOnInit(){}
 }
